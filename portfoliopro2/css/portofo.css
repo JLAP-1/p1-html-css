@@ -6,18 +6,18 @@ body {
   margin: 0;
 }
 nav {
-  display: flex;               
-  justify-content: center;  
-  position: sticky; 
-  top: 0;    
-  gap: 20px;                    
+  display: flex;
+  justify-content: space-evenly;
+  position: sticky;
+  top: 0;
+  gap: 20px;
   background-color: #cfe8fa;
   padding: 15px;
 }
 
 nav ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   position: sticky;
   top: 0;
   gap: 20px;
@@ -25,6 +25,7 @@ nav ul {
 
 nav li {
   list-style: none;
+  justify-content: space-evenly;
 }
 
 nav a {
@@ -36,7 +37,7 @@ nav a {
 
 section {
   width: 80%;
-  margin: 0 auto;                
+  margin: 0 auto;
   padding: 40px 0;
 }
 
@@ -57,12 +58,56 @@ h3 {
   display: flex;
   gap: 20px;
 }
+
+table,
+th,
+td{
+border: 1px solid black;
+}
+
 .blok {
   background-color: white;
   border: 2px solid #cfe8fa;
   padding: 15px;
   margin-bottom: 20px;
-  flex: 1;
+}
+
+.mofongo {
+  background-color: white;
+  border: 2px solid #cfe8fa
+  padding 15px;
+  margin-bottom: 20px;
+  display: flex;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.email-section {
+  background-color: #ffffff;
+  border: 1px solid #c9e4fa;
+  padding: 25px;
+  margin: 40px auto;
+  max-width: 1000px;
+  box-sizing: border-box;
+  color: #234568;
+}
+
+.email-section h2 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.email-section p {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 footer {
@@ -72,64 +117,64 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    gap: 15px;
+  }
 
-    .container {
-        display: flex;
-        gap: 15px;
-    }
-
-    .blok {
-        flex: 1;
-    }
-
+  .blok {
+    flex: 1;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  header {
+    padding: 10px;
+  }
 
-    header {
-        padding: 10px;
-    }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
 
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 8px;
-    }
+  nav a {
+    margin: 5px;
+    font-size: 14px;
+  }
 
-    nav a {
-        margin: 5px;
-        font-size: 14px;
-    }
+  section {
+    width: 95%;
+    margin: 20px auto;
+  }
 
-    section {
-        width: 95%;
-        margin: 20px auto;
-    }
+  .container {
+    display: block;
+  }
 
-    .container {
-        display: block;
-    }
+  .blok {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 
-    .blok {
-        width: 100%;
-        margin-bottom: 15px;
-    }
+  h1 {
+    font-size: 24px;
+  }
 
-    h1 {
-        font-size: 24px;
-    }
+  h2 {
+    font-size: 20px;
+  }
 
-    h2 {
-        font-size: 20px;
-    }
+  p {
+    font-size: 14px;
+  }
 
-    p {
-        font-size: 14px;
-    }
+  .email-section {
+    font-size: 20px;
+  }
 
-    footer {
-        font-size: 13px;
-    }
-
+  footer {
+    font-size: 13px;
+  }
 }
