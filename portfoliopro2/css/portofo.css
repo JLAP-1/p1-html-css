@@ -159,9 +159,9 @@ footer {
     flex: 1;
   }
 
-   .projecten-container {
-       grid-template-columns: repeat(2, 1fr);
-    }
+  .projecten-container {
+  flex-wrap: wrap-reverse;
+  }
 }
 
 @media screen and (max-width: 767px) {
